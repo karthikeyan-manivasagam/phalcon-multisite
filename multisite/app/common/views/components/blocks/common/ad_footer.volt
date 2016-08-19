@@ -1,0 +1,1 @@
+ {{ partial('components/ads/common/ad1') }}
