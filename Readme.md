@@ -1,6 +1,6 @@
 #Multisite 
 
-This is the multi site Skeleton  built in phalcon
+Multi site skeleton for phalcon php framework
 
 With shared common views ,models and controllers among multiple websites 
 
@@ -49,7 +49,7 @@ With shared common views ,models and controllers among multiple websites
 
 # Phalcon Multi site skeleton  
 
-This is the multi site Skeleton  built in phalcon
+Advantage 
 
 1. Shared / site specific common views, models and controllers among multiple websites 
 
@@ -60,6 +60,8 @@ This is the multi site Skeleton  built in phalcon
 4. Each websites in this multisite setup can have phalcon multi module setup separately.  
 
 5. Views folder will have n number of volt templates, one specific volt template can be overridden for site specfic changes with out creating whole views folder in all sites rather just by creating single volt template file.
+
+6. One place code change. Sharing common functionlities among sites. 
 
 
 # **Steps to achieve it**
