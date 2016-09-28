@@ -3,14 +3,14 @@ namespace Extended;
 
 use Phalcon\Config\Adapter\Ini as ConfigIni;
 
-Class ItpBootstrap {
+Class ExtendedBootstrap {
 
 	 public $config, $environment, $sites, $sitename, $server_name, $approot; 
 
    public function __construct() {
    	$this->server_name =   $_SERVER['HTTP_HOST'];
  		$this->approot = realpath('..') . '/';
- 		$env = new ConfigIni($this->approot . 'extend/environment.ini');
+ 		$env = new ConfigIni($this->approot . 'extended/environment.ini');
  		$this->environment = $env->environment;
  		$this->config = $this->getConfig();
  		$this->sites = $this->getSites(); 
@@ -18,7 +18,7 @@ Class ItpBootstrap {
    }
 
    public function getConfig() {
-     $settings = new ConfigIni($this->approot . 'extend/config_'.$this->environment.'.ini');
+     $settings = new ConfigIni($this->approot . 'extended/config_'.$this->environment.'.ini');
      return $settings;
    }
 
